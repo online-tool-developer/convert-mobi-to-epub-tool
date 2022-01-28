@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Convert MOBI to EPUB tool</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css?v=7"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index-script.js?v=2"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row it">
+        <div class="col-sm-offset-1 col-sm-10" id="one">
+          <div class="row">
+            <div class="col-sm-offset-2 col-sm-8 form-group">
+              <h3 class="text-center">Convert MOBI to EPUB tool</h3>
+            </div><!--form-group-->
+          </div><!--row-->
+          <br>
+          <form action="javascript:void(0);" id="form-upload">
+            <div id="uploader">
+              <div class="row uploadDoc">
+                <div class="col-sm-2"></div><!-- col-2 -->
+                <div class="col-sm-8">
+                  <div class="docErr">Please upload valid file</div><!--error-->
+                  <div class="fileUpload btn btn-orange">
+                    <span><i class="fa fa-cloud-upload"></i></span>
+                    <span class="upl" id="upload">Upload mobi book</span>
+                    <input type="file" name="file" id="file" class="upload up" onchange="readURL(this);" />
+                    <input type="hidden" id="key" name="key" value="YOUR_KEY">
+                  </div><!-- btn-orange -->
+                </div><!-- col-8 -->
+                <div class="col-sm-2"></div><!-- col-2 -->
+              </div><!--row-->
+            </div><!--uploader-->
+          </form>
+          <div class="text-center">
+            <a class="btn btn-next"><i class="fa fa-paper-plane"></i> Convert to epub</a>
+            <a class="btn btn-new" style="display: none;"><i class="fa fa-cloud-download"></i> Downloaded epub</a>
+            <img id="spinner" src="imgs/spinner.gif" style="display:none" alt="logo_big" class="spinner">
+          </div>
+        </div><!--one-->
+      </div><!-- row -->
+      <br>
+      <br>
+      <div class="row it">
+        <div class="col-sm-offset-1 col-sm-10">
+          <p>This tool converts the books on a web service that uses the software <a href="https://calibre-ebook.com/">Calibre</a>.</p>
+          <p>The web service can be also use directly to convert books.</p>
+          <p>You can see the full code on <a href="https://github.com/online-tool-developer/convert-mobi-to-epub-tool">GitHub</a>.</p>
+          <br>
+          <p><b>Privacy Policy</b></p>
+          <p>This tool is for free.</p>
+          <p>This tool does not collect any information and neither use cookies.</p>
+          <p>The books you upload will be deleted in a maximum of two hours.</p>
+          <p>By using the tool you consent to this terms.</p>
+        </div><!-- div -->
+      </div><!-- row -->
+    </div><!-- container -->
+
+  </body>
+</html>
